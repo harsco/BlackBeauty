@@ -11,6 +11,7 @@
 #import "ViewController.h"
 
 @implementation AppDelegate
+@synthesize rootTab;
 
 - (void)dealloc
 {
@@ -28,7 +29,7 @@
     } else {
         self.viewController = [[[ViewController alloc] initWithNibName:@"ViewController_iPad" bundle:nil] autorelease];
     }
-    self.window.rootViewController = self.viewController;
+    self.window.rootViewController = self.rootTab;                  //present the root Tab as a landing page (currently for iPhone
     [self.window makeKeyAndVisible];
     return YES;
 }
@@ -59,5 +60,17 @@
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
+
+//Custom getter method for rootTab
+
+- (UITabBarController *)rootTab {
+	if (rootTab == nil) {
+		[[NSBundle mainBundle] loadNibNamed:@"rootTab" owner:self options:nil];
+        rootTab.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
+        rootTab.modalPresentationStyle = UIModalPresentationFullScreen;
+	}
+	return rootTab;
+}
+
 
 @end
