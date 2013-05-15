@@ -11,6 +11,7 @@
 @interface addressViewCell : UITableViewCell
 {
     UILabel* addressViewLabel;
+   
 }
 
 @property(nonatomic,retain)IBOutlet UILabel* addressViewLabel;

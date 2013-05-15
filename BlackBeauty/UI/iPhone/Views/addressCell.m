@@ -9,7 +9,7 @@
 #import "addressCell.h"
 
 @implementation addressCell
-@synthesize addressLabel;
+@synthesize addressLabel,showMapButton;
 
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {

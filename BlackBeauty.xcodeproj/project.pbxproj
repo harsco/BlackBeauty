@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A1804811737DBB60042D3FD /* LocatorToolUserInputVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A18047F1737DBB60042D3FD /* LocatorToolUserInputVC.m */; };
+		3A1804841737DC010042D3FD /* LocatorToolUserInputVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A1804831737DC010042D3FD /* LocatorToolUserInputVC.xib */; };
+		3A1804861737DCCE0042D3FD /* green_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A1804851737DCCE0042D3FD /* green_button.png */; };
 		3A255AA3172FAE920042875F /* rootTab.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A255AA2172FAE920042875F /* rootTab.xib */; };
 		3A255AA5172FAEF40042875F /* icon_home.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A255AA4172FAEF40042875F /* icon_home.png */; };
 		3A255AA9172FB15B0042875F /* HomeScreenVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A255AA7172FB15B0042875F /* HomeScreenVC.m */; };
@@ -22,6 +25,7 @@
 		3A255AC5172FCFC30042875F /* ConstantDefines.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A255AC4172FCFC30042875F /* ConstantDefines.m */; };
 		3A255AC8172FD9C70042875F /* LocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A255AC7172FD9C70042875F /* LocationManager.m */; };
 		3A255ACA172FD9E90042875F /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A255AC9172FD9E90042875F /* CoreLocation.framework */; };
+		3A4FE6D217436ED500A83E7E /* pin.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A4FE6D117436ED500A83E7E /* pin.png */; };
 		3A5E88A917156DD800C531CA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A5E88A817156DD800C531CA /* UIKit.framework */; };
 		3A5E88AB17156DD800C531CA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A5E88AA17156DD800C531CA /* Foundation.framework */; };
 		3A5E88AD17156DD800C531CA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A5E88AC17156DD800C531CA /* CoreGraphics.framework */; };
@@ -31,6 +35,9 @@
 		3A5E88C217156DD800C531CA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A5E88C117156DD800C531CA /* ViewController.m */; };
 		3A5E88C517156DD800C531CA /* ViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A5E88C317156DD800C531CA /* ViewController_iPhone.xib */; };
 		3A5E88C817156DD800C531CA /* ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A5E88C617156DD800C531CA /* ViewController_iPad.xib */; };
+		3A7B92B1173B8EE90097A6CA /* AppleMapsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7B92AF173B8EE90097A6CA /* AppleMapsViewController.m */; };
+		3A7B92B4173B8F220097A6CA /* AppleMapsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A7B92B3173B8F220097A6CA /* AppleMapsViewController.xib */; };
+		3A7B92B6173B8F560097A6CA /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A7B92B5173B8F560097A6CA /* MapKit.framework */; };
 		3AA5DFE517324F9A0002E657 /* testLocationResultsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AA5DFE317324F9A0002E657 /* testLocationResultsVC.m */; };
 		3AA5DFE817324FD90002E657 /* testLocationResultsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3AA5DFE717324FD90002E657 /* testLocationResultsVC.xib */; };
 		3AA5DFEB1732A0B90002E657 /* Location.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AA5DFEA1732A0B90002E657 /* Location.m */; };
@@ -76,9 +83,17 @@
 		3AB7BF181733F0CB00029A68 /* location.db in Resources */ = {isa = PBXBuildFile; fileRef = 3AB7BF171733F0CB00029A68 /* location.db */; };
 		3AB7BF1A1733F4DA00029A68 /* addressViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3AB7BF191733F4D800029A68 /* addressViewCell.xib */; };
 		3AB7BF1D1733F55E00029A68 /* addressViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AB7BF1C1733F55E00029A68 /* addressViewCell.m */; };
+		3AC2D6BF1738E7B400B2A714 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AC2D6BE1738E7B400B2A714 /* AddressBook.framework */; };
+		3AF1E8F9173CDCFB00241C20 /* app_btn_back.png in Resources */ = {isa = PBXBuildFile; fileRef = 3AF1E8F7173CDCFB00241C20 /* app_btn_back.png */; };
+		3AF1E8FA173CDCFB00241C20 /* app_btn_back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3AF1E8F8173CDCFB00241C20 /* app_btn_back@2x.png */; };
+		3AF1E8FD173CDED000241C20 /* BBStoreAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AF1E8FC173CDED000241C20 /* BBStoreAnnotation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3A18047E1737DBB50042D3FD /* LocatorToolUserInputVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LocatorToolUserInputVC.h; path = UI/iPhone/ViewControllers/LocatorToolUserInputVC.h; sourceTree = "<group>"; };
+		3A18047F1737DBB60042D3FD /* LocatorToolUserInputVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LocatorToolUserInputVC.m; path = UI/iPhone/ViewControllers/LocatorToolUserInputVC.m; sourceTree = "<group>"; };
+		3A1804831737DC010042D3FD /* LocatorToolUserInputVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LocatorToolUserInputVC.xib; path = UI/iPhone/Resources/Nib/LocatorToolUserInputVC.xib; sourceTree = "<group>"; };
+		3A1804851737DCCE0042D3FD /* green_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = green_button.png; path = UI/iPhone/Resources/images/green_button.png; sourceTree = "<group>"; };
 		3A255AA2172FAE920042875F /* rootTab.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = rootTab.xib; path = UI/iPhone/Resources/Nib/rootTab.xib; sourceTree = "<group>"; };
 		3A255AA4172FAEF40042875F /* icon_home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon_home.png; path = UI/iPhone/Resources/images/icon_home.png; sourceTree = "<group>"; };
 		3A255AA6172FB15B0042875F /* HomeScreenVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HomeScreenVC.h; path = UI/iPhone/ViewControllers/HomeScreenVC.h; sourceTree = "<group>"; };
@@ -98,6 +113,7 @@
 		3A255AC6172FD9C60042875F /* LocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LocationManager.h; path = Classes/LocationManager.h; sourceTree = "<group>"; };
 		3A255AC7172FD9C70042875F /* LocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LocationManager.m; path = Classes/LocationManager.m; sourceTree = "<group>"; };
 		3A255AC9172FD9E90042875F /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		3A4FE6D117436ED500A83E7E /* pin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pin.png; path = UI/iPhone/Resources/images/pin.png; sourceTree = "<group>"; };
 		3A5E88A517156DD800C531CA /* BlackBeauty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlackBeauty.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A5E88A817156DD800C531CA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		3A5E88AA17156DD800C531CA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -112,6 +128,10 @@
 		3A5E88C117156DD800C531CA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		3A5E88C417156DD800C531CA /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPhone.xib; sourceTree = "<group>"; };
 		3A5E88C717156DD800C531CA /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPad.xib; sourceTree = "<group>"; };
+		3A7B92AE173B8EE90097A6CA /* AppleMapsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppleMapsViewController.h; path = UI/iPhone/ViewControllers/AppleMapsViewController.h; sourceTree = "<group>"; };
+		3A7B92AF173B8EE90097A6CA /* AppleMapsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppleMapsViewController.m; path = UI/iPhone/ViewControllers/AppleMapsViewController.m; sourceTree = "<group>"; };
+		3A7B92B3173B8F220097A6CA /* AppleMapsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AppleMapsViewController.xib; path = UI/iPhone/Resources/Nib/AppleMapsViewController.xib; sourceTree = "<group>"; };
+		3A7B92B5173B8F560097A6CA /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		3AA5DFE217324F9A0002E657 /* testLocationResultsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = testLocationResultsVC.h; path = UI/iPhone/ViewControllers/testLocationResultsVC.h; sourceTree = "<group>"; };
 		3AA5DFE317324F9A0002E657 /* testLocationResultsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = testLocationResultsVC.m; path = UI/iPhone/ViewControllers/testLocationResultsVC.m; sourceTree = "<group>"; };
 		3AA5DFE717324FD90002E657 /* testLocationResultsVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = testLocationResultsVC.xib; path = UI/iPhone/Resources/Nib/testLocationResultsVC.xib; sourceTree = "<group>"; };
@@ -165,6 +185,11 @@
 		3AB7BF191733F4D800029A68 /* addressViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = addressViewCell.xib; path = UI/iPhone/Resources/Nib/addressViewCell.xib; sourceTree = "<group>"; };
 		3AB7BF1B1733F55E00029A68 /* addressViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = addressViewCell.h; path = UI/iPhone/Views/addressViewCell.h; sourceTree = "<group>"; };
 		3AB7BF1C1733F55E00029A68 /* addressViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = addressViewCell.m; path = UI/iPhone/Views/addressViewCell.m; sourceTree = "<group>"; };
+		3AC2D6BE1738E7B400B2A714 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		3AF1E8F7173CDCFB00241C20 /* app_btn_back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = app_btn_back.png; path = UI/iPhone/Resources/images/app_btn_back.png; sourceTree = "<group>"; };
+		3AF1E8F8173CDCFB00241C20 /* app_btn_back@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "app_btn_back@2x.png"; path = "UI/iPhone/Resources/images/app_btn_back@2x.png"; sourceTree = "<group>"; };
+		3AF1E8FB173CDED000241C20 /* BBStoreAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BBStoreAnnotation.h; path = UI/iPhone/Views/BBStoreAnnotation.h; sourceTree = "<group>"; };
+		3AF1E8FC173CDED000241C20 /* BBStoreAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BBStoreAnnotation.m; path = UI/iPhone/Views/BBStoreAnnotation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,6 +197,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A7B92B6173B8F560097A6CA /* MapKit.framework in Frameworks */,
+				3AC2D6BF1738E7B400B2A714 /* AddressBook.framework in Frameworks */,
 				3A255ACA172FD9E90042875F /* CoreLocation.framework in Frameworks */,
 				3A255AC2172FCEC10042875F /* libsqlite3.0.dylib in Frameworks */,
 				3A5E88A917156DD800C531CA /* UIKit.framework in Frameworks */,
@@ -216,6 +243,10 @@
 				3A255AA7172FB15B0042875F /* HomeScreenVC.m */,
 				3AA5DFE217324F9A0002E657 /* testLocationResultsVC.h */,
 				3AA5DFE317324F9A0002E657 /* testLocationResultsVC.m */,
+				3A18047E1737DBB50042D3FD /* LocatorToolUserInputVC.h */,
+				3A18047F1737DBB60042D3FD /* LocatorToolUserInputVC.m */,
+				3A7B92AE173B8EE90097A6CA /* AppleMapsViewController.h */,
+				3A7B92AF173B8EE90097A6CA /* AppleMapsViewController.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -232,6 +263,8 @@
 		3A255A9F172FACA40042875F /* Nib */ = {
 			isa = PBXGroup;
 			children = (
+				3A7B92B3173B8F220097A6CA /* AppleMapsViewController.xib */,
+				3A1804831737DC010042D3FD /* LocatorToolUserInputVC.xib */,
 				3AB7BF061733A4AF00029A68 /* DownloadVC.xib */,
 				3AB7BF011733A1F400029A68 /* aboutUSVC.xib */,
 				3AB7BEFA1733A06700029A68 /* faqVC.xib */,
@@ -248,6 +281,10 @@
 		3A255AA0172FACA90042875F /* images */ = {
 			isa = PBXGroup;
 			children = (
+				3A4FE6D117436ED500A83E7E /* pin.png */,
+				3AF1E8F7173CDCFB00241C20 /* app_btn_back.png */,
+				3AF1E8F8173CDCFB00241C20 /* app_btn_back@2x.png */,
+				3A1804851737DCCE0042D3FD /* green_button.png */,
 				3AB7BF081733A54A00029A68 /* pdf.png */,
 				3AB7BF091733A54B00029A68 /* word.png */,
 				3AB7BEF017339E8000029A68 /* icon_information.png */,
@@ -278,7 +315,6 @@
 		3A5E889C17156DD800C531CA = {
 			isa = PBXGroup;
 			children = (
-				3A255AC9172FD9E90042875F /* CoreLocation.framework */,
 				3A255AB7172FC0F00042875F /* app_icon_iphone.png */,
 				3A255AB5172FC0EB0042875F /* app_icon_iphone_high res.png */,
 				3A255AB3172FC09B0042875F /* Default@2x.png */,
@@ -301,6 +337,9 @@
 			isa = PBXGroup;
 			children = (
 				3A255AC1172FCEC10042875F /* libsqlite3.0.dylib */,
+				3A7B92B5173B8F560097A6CA /* MapKit.framework */,
+				3AC2D6BE1738E7B400B2A714 /* AddressBook.framework */,
+				3A255AC9172FD9E90042875F /* CoreLocation.framework */,
 				3A5E88A817156DD800C531CA /* UIKit.framework */,
 				3A5E88AA17156DD800C531CA /* Foundation.framework */,
 				3A5E88AC17156DD800C531CA /* CoreGraphics.framework */,
@@ -383,6 +422,8 @@
 				3AB7BF111733CBB800029A68 /* addressCell.m */,
 				3AB7BF1B1733F55E00029A68 /* addressViewCell.h */,
 				3AB7BF1C1733F55E00029A68 /* addressViewCell.m */,
+				3AF1E8FB173CDED000241C20 /* BBStoreAnnotation.h */,
+				3AF1E8FC173CDED000241C20 /* BBStoreAnnotation.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -487,6 +528,12 @@
 				3AB7BF0F1733CA1B00029A68 /* addressCell.xib in Resources */,
 				3AB7BF181733F0CB00029A68 /* location.db in Resources */,
 				3AB7BF1A1733F4DA00029A68 /* addressViewCell.xib in Resources */,
+				3A1804841737DC010042D3FD /* LocatorToolUserInputVC.xib in Resources */,
+				3A1804861737DCCE0042D3FD /* green_button.png in Resources */,
+				3A7B92B4173B8F220097A6CA /* AppleMapsViewController.xib in Resources */,
+				3AF1E8F9173CDCFB00241C20 /* app_btn_back.png in Resources */,
+				3AF1E8FA173CDCFB00241C20 /* app_btn_back@2x.png in Resources */,
+				3A4FE6D217436ED500A83E7E /* pin.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -512,6 +559,9 @@
 				3AB7BF051733A4A100029A68 /* DownloadVC.m in Sources */,
 				3AB7BF121733CBB800029A68 /* addressCell.m in Sources */,
 				3AB7BF1D1733F55E00029A68 /* addressViewCell.m in Sources */,
+				3A1804811737DBB60042D3FD /* LocatorToolUserInputVC.m in Sources */,
+				3A7B92B1173B8EE90097A6CA /* AppleMapsViewController.m in Sources */,
+				3AF1E8FD173CDED000241C20 /* BBStoreAnnotation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -607,6 +657,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BlackBeauty/BlackBeauty-Prefix.pch";
 				INFOPLIST_FILE = "BlackBeauty/BlackBeauty-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -618,6 +669,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BlackBeauty/BlackBeauty-Prefix.pch";
 				INFOPLIST_FILE = "BlackBeauty/BlackBeauty-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

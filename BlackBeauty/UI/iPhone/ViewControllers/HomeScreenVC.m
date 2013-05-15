@@ -48,11 +48,12 @@
 {
     //[[AppStorage getInstance] getAllLocations];
     
-    testLocationResultsVC* testVC = [[testLocationResultsVC alloc] init];
+    //Push the screen which takes User Inputs for the search
+    LocatorToolUserInputVC* userInputVC = [[LocatorToolUserInputVC alloc] init];
     
-    [self.navigationController pushViewController:testVC animated:YES];
+    [self.navigationController pushViewController:userInputVC animated:YES];
     
-    [testVC release];
+    [userInputVC release];
     
 }
 -(IBAction)onContactUsClicked:(id)sender

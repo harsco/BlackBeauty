@@ -8,6 +8,10 @@
 
 #import <Foundation/Foundation.h>
 #import <CoreLocation/CoreLocation.h>
+#import <AddressBookUI/AddressBookUI.h>
+#import "Location.h"
+#import "AppStorage.h"
+
 
 @protocol locationProtocol ;
 
@@ -16,12 +20,17 @@
 {
     CLLocationManager *locationManager;
     id <locationProtocol> delegate;
+    
+    Location* locationDesired;
 }
 
 @property (nonatomic, retain) CLLocationManager *locationManager;
 @property(nonatomic,retain)id<locationProtocol>delegate;
 
--(void)getLocationCoordinates;
+
+-(void)getResellersNearMYLocation;
+-(void)getResellersNearThePlace:(NSString*)place;
+-(void)doForwardGeoCodingOfPlace:(NSString*)place;
 
 @end
 
@@ -29,6 +38,7 @@
 @protocol locationProtocol <NSObject>
 
 -(void)didGetLocationOfUser:(Location*)locationDictionary;
--(void)didFailToGetLocationOfUser:(NSError*)error;
+-(void)didFailToGetLocationOfUser:(NSString*)error;
+-(void)didGetDesiredLocations:(NSMutableArray*)desiredLocationsArray;
 
 @end

@@ -141,13 +141,9 @@ static sqlite3 *database = nil;
     NSMutableArray* resultLocations = [[NSMutableArray alloc] init];
     
     
-    NSLog(@"query is %@",sqlQuery);
+  //  NSLog(@"query is %@",sqlQuery);
     
-    //NSString* sqlQuery = [[NSString alloc] initWithFormat:@"%@%@%@%@%@",@"select * from ",table,@" where foreignId = '",entity,@"'"];
-    
-    // NSLog(@"sql query is %@",sqlQuery);
-    
-    // NSMutableArray* dataArray = [[NSMutableArray alloc] init];38.400391,-81.847847
+   
     
     sqlite3_stmt* statement = NULL;
     
@@ -163,31 +159,40 @@ static sqlite3 *database = nil;
         {
             
             
-            Location* locationObject = [[Location alloc] init];
+            NSAutoreleasePool* pool = [[NSAutoreleasePool alloc] init];
             
-            locationObject.name = [NSString stringWithFormat:@"%s",(char *)sqlite3_column_text(statement, 0)];
+            Location* locationObject = [[Location alloc] init];
+        
+            
+            locationObject.name = [[[NSString alloc] initWithFormat:@"%s",(char *)sqlite3_column_text(statement, 0) ] autorelease];
+            
             locationObject.address = [NSString stringWithFormat:@"%s%@%s%@%s",(char *)sqlite3_column_text(statement, 1),@",",(char *)sqlite3_column_text(statement, 2),@",",(char *)sqlite3_column_text(statement, 3)];
             locationObject.telephone = [NSString stringWithFormat:@"%s",(char *)sqlite3_column_text(statement, 4)];
+            
+            locationObject.Latitude = sqlite3_column_double(statement, 7);
+            locationObject.Longitude = sqlite3_column_double(statement, 8);
             
             locationObject.distanceFromInterestedLocation = sqlite3_column_double(statement, 9);
             
             
             
             
-            NSLog(@"%@",[NSString stringWithFormat:@"%s",(char *)sqlite3_column_text(statement, 0)]);
-            NSLog(@"%@",[NSString stringWithFormat:@"%s",(char *)sqlite3_column_text(statement, 1)]);
-            NSLog(@"%@",[NSString stringWithFormat:@"%s",(char *)sqlite3_column_text(statement, 2)]);
-            NSLog(@"%@",[NSString stringWithFormat:@"%s",(char *)sqlite3_column_text(statement, 3)]);
-            NSLog(@"%@",[NSString stringWithFormat:@"%s",(char *)sqlite3_column_text(statement, 4)]);
-            NSLog(@"%@",[NSString stringWithFormat:@"%s",(char *)sqlite3_column_text(statement, 5)]);
-            NSLog(@"%@",[NSString stringWithFormat:@"%s",(char *)sqlite3_column_text(statement, 6)]);
-            NSLog(@"%f",sqlite3_column_double(statement, 7));
-            NSLog(@"%f",sqlite3_column_double(statement, 8));
-            NSLog(@"%f",sqlite3_column_double(statement, 9));
+//            NSLog(@"%@",[NSString stringWithFormat:@"%s",(char *)sqlite3_column_text(statement, 0)]);
+//            NSLog(@"%@",[NSString stringWithFormat:@"%s",(char *)sqlite3_column_text(statement, 1)]);
+//            NSLog(@"%@",[NSString stringWithFormat:@"%s",(char *)sqlite3_column_text(statement, 2)]);
+//            NSLog(@"%@",[NSString stringWithFormat:@"%s",(char *)sqlite3_column_text(statement, 3)]);
+//            NSLog(@"%@",[NSString stringWithFormat:@"%s",(char *)sqlite3_column_text(statement, 4)]);
+//            NSLog(@"%@",[NSString stringWithFormat:@"%s",(char *)sqlite3_column_text(statement, 5)]);
+//            NSLog(@"%@",[NSString stringWithFormat:@"%s",(char *)sqlite3_column_text(statement, 6)]);
+//            NSLog(@"%f",sqlite3_column_double(statement, 7));
+//            NSLog(@"%f",sqlite3_column_double(statement, 8));
+//            NSLog(@"%f",sqlite3_column_double(statement, 9));
             
             [resultLocations addObject:locationObject];
             
             [locationObject release];
+            
+            [pool release];
             
         }
     }

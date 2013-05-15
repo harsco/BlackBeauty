@@ -11,4 +11,16 @@
 @implementation Location
 @synthesize Latitude,Longitude,name,address,telephone,email,webSite,distanceFromInterestedLocation;
 
+-(void)dealloc
+{
+    [super dealloc];
+    
+    [name release];
+    [address release];
+    [telephone release];
+    [email release];
+    [webSite release];
+   
+}
+
 @end

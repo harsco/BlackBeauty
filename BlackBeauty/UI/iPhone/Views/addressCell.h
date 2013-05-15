@@ -11,8 +11,11 @@
 @interface addressCell : UITableViewCell
 {
     IBOutlet UILabel* addressLabel;
+     UIButton* showMapButton;
 }
 
 @property(nonatomic,retain)IBOutlet UILabel* addressLabel;
+@property(nonatomic,retain)IBOutlet UIButton* showMapButton;
+
 
 @end

@@ -12,6 +12,7 @@
 #import "testLocationResultsVC.h"
 #import "ContactUs.h"
 #import "DownloadVC.h"
+#import "LocatorToolUserInputVC.h"
 
 @interface HomeScreenVC : UIViewController
 {
